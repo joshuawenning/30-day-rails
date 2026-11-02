@@ -1,18 +1,16 @@
 # Think in Ruby: Collections and Enumerable
 
-## Concept
-
 Ruby's `Enumerable` module provides methods for working with collections without manually managing counters or indexes.
 
-`select` - Which items meet a condition?
-`reject` - Which items should be excluded?
-`map` - How should each item be transformed?
-`sort_by` - How should these items be ordered?
-`group_by` - How can items be categorized?
-`sum` - What's the total of these values?
+- `select` - Which items meet a condition?
+- `reject` - Which items should be excluded?
+- `map` - How should each item be transformed?
+- `sort_by` - How should these items be ordered?
+- `group_by` - How can items be categorized?
+- `sum` - What's the total of these values?
 
 ### Example
-```
+```ruby
 numbers = [3, 8, 12, 5, 9]
 
 numbers.select(&:even?)
@@ -25,10 +23,7 @@ numbers.map { |n| n * 2 }
 ## Assignment: Work Order Queue
 
 Build a small, standalone Ruby program that prioritizes work orders. Use Ruby's Enumerable methods rather than explicit `for` or `while` loops. Do not mutate the original array. Use this starting data:
-
-```
-```
-```
+```ruby
 WORK_ORDERS = [
   { id: 101, status: :open, blocked: false,
     priority: 2, due_on: "2026-11-05",
